@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>自己紹介ページ</title>
+    <meta charset="UTF-8">
+    <title>ToDoリスト</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>自己紹介</h1>
+    <div class="container">
+        <h1>ToDoリスト</h1>
+        <p>やることを入力して管理できます。</p>
 
-    <p>名前：くちぱっち</p>
-    <p>誕生日：5月18日</p>
-    <p>性格：のんびり屋で食いしん坊</p>
-    <p>興味：温泉、自然</p>
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="タスクを入力">
+            <button onclick="addTask()">追加</button>
+        </div>
 
-    <button onclick="showMessage()">メッセージを見る</button>
+        <ul id="taskList"></ul>
+    </div>
 
     <script src="script.js"></script>
 </body>
